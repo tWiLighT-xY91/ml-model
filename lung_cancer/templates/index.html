@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lung Cancer Prediction</title>
+</head>
+<body>
+    <h2>Enter Patient Data</h2>
+    <form method="POST">
+        <input type="text" name="radius_mean" placeholder="Radius Mean" required>
+        <input type="text" name="texture_mean" placeholder="Texture Mean" required>
+        <input type="text" name="perimeter_mean" placeholder="Perimeter Mean" required>
+        <!-- Add all other input fields accordingly -->
+        <button type="submit">Predict</button>
+    </form>
+    <h3>{{ prediction_text }}</h3>
+</body>
+</html>
